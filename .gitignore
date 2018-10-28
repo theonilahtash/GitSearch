@@ -1,7 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
+apiUrl:  'https://api.github.com/users/theonilahtash?access_token=7150172116e820d1bbfaf354ba03899d4fbd2de4',
 
 # compiled output
-/dist
 /tmp
 /out-tsc
 
