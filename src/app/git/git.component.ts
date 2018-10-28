@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GitService } from '../gits/git.service';
 
 @Component({
   selector: 'app-git',
@@ -6,8 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./git.component.css']
 })
 export class GitComponent implements OnInit {
+  git: any[];
+  repos: any [];
+  username:string;
 
-  constructor() { }
+
+  constructor(private gitService:GitService) {
+
+   }
+   findGit(){
+     this.gitService.updateGit(this.username);
+     this.gitService.getGitInfo().subscribe(git =>{
+       console.log(git);
+       this.git = git;
+     });
+     this.gitService.getGitRepos().subscribe(repos =>{
+       console.log(repos);
+       this.repos = repos;
+     })
+   }
 
   ngOnInit() {
   }

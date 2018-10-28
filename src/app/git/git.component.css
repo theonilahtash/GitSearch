@@ -1,0 +1,21 @@
+.repos{
+  color: red;
+  text-decoration-line: underline;
+  font-size: 2em;
+}
+.repo{
+  color: blue;
+}
+.description{
+  color: blue;
+  font-size: 18px;
+}
+.creation{
+  color: blue;
+}
+::placeholder{
+  color: salmon;
+}
+#form{
+  width: 30%;
+}
