@@ -1,24 +1,18 @@
-<h1>AMAZING WORLD OF GIT SEARCH :-)</h1>
-<!-- <img class="responsive-img" src="../../assets/download.jpg" alt="Gitsearch"> -->
+<h1>AMAZING WORLD OF GIT SEARCH</h1>
 <form action="" class="search-form" class="card-panel teal lighten-2" >
-  <h5 class="black-text">Get github users by username :-)</h5>
+  <h5 class="black-text">Get github users by username</h5>
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findGit()">
+
+    <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findGit()"  >
   </div>
 </form>
-<div *ngIf="git">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      {{git.name}} <small>{{git.login}}</small>
-      <span *ngIf="git.company">,  Works at{{git.company}}</span>
-      {{git.location}}
-    </div>
     <div class="panel-body">
       <div class="row">
         <div class="col-sm-3">
            <img src= "{{git.avatar_url}}" class="responsive-img circle responsive-img" alt="git Image">
         </div>
-        <div class="col-sm-5">
+  
+        <div class="col-m-8">
           <ul class="list-group">
             <li class="list-group-item" *ngIf="git.bio">{{git.bio}}</li>
             <li class="list-group-item" *ngIf="git.hirable">Available for hire </li>
@@ -26,6 +20,7 @@
             <li class="list-group-item" *ngIf="git.email">{{git.email}}</li>
           </ul>
         </div>
+        <div class="jumbotron">
                 <div class="col-sm-4">
                   <p>
                     <button class="btn btn-default btn-sm" class="btn pulse btn red">{{git.public_repos}}Public Repos</button>
@@ -36,6 +31,9 @@
                   <p>
                     <a href="{{git.html_url}}" class="btn btn-warning btn-sm pull-right" target="_blank" class="btn pulse">View git on github</a>
                   </p>
+                  <div>
+                  <div id="well">
+                  <div class="jumbotron">
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h3 class="panel-title">Repos</h3>
@@ -45,10 +43,10 @@
                         {{repo.name}}  <a href = "{{repo.html_url}}">View this project on Github </a>
                       </p>
                       <p>{{repo.description}}</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>

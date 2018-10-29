@@ -4,6 +4,7 @@ import { GitService } from '../gits/git.service';
 @Component({
   selector: 'app-git',
   templateUrl: './git.component.html',
+  providers:[GitService], //add the providers to the component
   styleUrls: ['./git.component.css']
 })
 export class GitComponent implements OnInit {

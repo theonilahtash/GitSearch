@@ -10,7 +10,7 @@ export class GitService {
   private clientid = '87b18bee67a5db132bc1';
   private clientsecret = '5f69b5c02a15fa46e5dcd9319ab7f72515b0dcb6';
   constructor(private http:Http) {
-    console.log("Service is now ready!");
+    console.log("Our service is ready!");
     this.username = 'theonilahtash';
   }
   getGitInfo(){

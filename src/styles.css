@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+h1{
+    border-style: dotted;
+    text-align: center;
+    color: blueviolet;
+    padding:20px;
+    margin:20px;
+    width: 250px;
+    background-color:black;
+    opacity:0.7;
+    
+
+}
+body{
+    color: white;
+    opacity: 0.7;
+    font-size: 1.5em;
+    background-color:goldenrod;
+    border: 5px solid black;
+}
+.black-text{
+    text-align: left;
+}
+.panel-title{
+    text-align: right;
+} 
+.btn pulse{
+    text-align: right;
+}
